@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2EF596;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div {
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.308);
+}
+div h1 {
+    margin-bottom: 15px;
+}
+div p {
+    margin-bottom: 10px;
+}
+.fonte-azul {
+    color: blue;
+}
+.fonte-vermelha {
+    color: red;
+}
+div h3 {
+    margin: 10px 0;
+}
+div pre {
+    margin: 5px 0;
+}

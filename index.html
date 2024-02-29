@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conta Salário</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Conta Salário</h1>
+            <form>
+                <p>
+                    Salário:
+                    <input type="number" id="inSalario" required>
+                </p>
+                <p>
+                    Descrição da Conta:
+                    <input type="text" id="inDescricao" required>
+                </p>
+                <p>
+                    Valor da Conta:
+                    <input type="number" id="inValor" step="0.01" required>
+                </p>
+                <input type="submit" value="Adicionar Conta">
+                <input type="reset" value="Apagar Contas">
+            </form>
+            <h3 class="fonte-azul"></h3>
+            <pre></pre>
+        </div>
+    </main>
+    <script src="js/conta.js"></script>
+</body>
+</html>
