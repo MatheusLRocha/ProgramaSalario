@@ -32,6 +32,8 @@ frm.addEventListener("submit", (e) => {
 })   
 
 frm.addEventListener("reset", (e) => {
+    descricoes.pop();
+    valores.pop();
     resp1.innerText = "";
     resp2.innerHTML = "";
     frm.inSalario.focus();
