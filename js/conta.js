@@ -32,9 +32,21 @@ frm.addEventListener("submit", (e) => {
 })   
 
 frm.addEventListener("reset", (e) => {
-    descricoes.pop();
-    valores.pop();
-    resp1.innerText = "";
-    resp2.innerHTML = "";
     frm.inSalario.focus();
 })  
+
+frm.btnApagar.addEventListener("click", () => {
+    let salario = Number(frm.inSalario.value);
+    const valorConta = Number(frm.inValor.value);
+    let listaConta = "";
+
+    descricoes.pop();
+    valores.pop();
+    descricoes.forEach((descricao, i) => (listaConta += `Conta ${descricao} - R$${valores[i].toFixed(2)}\n`));
+    valores.forEach(valor => salario = salario - valor);
+    
+    resp1.innerText = `Salário Atual R$: ${salario.toFixed(2)}`;
+    resp2.innerText = listaConta;
+    
+    frm.inValor.focus();
+})
